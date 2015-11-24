@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Cadastro de A&ccedil;&otilde;es</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                A&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.sigla}" /> <br/>
+                Descri&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.descricao}" /> <br/>
+                Cota&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.addCotacao(valor, null)}" /> <br/>
+                Tipo: <h:selectOneMenu value="#{acaoManagedBean.acao.tipo}" requiredMessage="Selecione uma opção" title="Tipo de ação"/>
+                Setor: <h:selectOneMenu value="#{acaoManagedBean.acao.setor}" /> <br/>
+            </h:panelGrid>
+        </h:form>
+        <h:commandButton value="Salvar" action="#{acaoManagedBean.criar()}"/>
+    </h:body>
+</html>
