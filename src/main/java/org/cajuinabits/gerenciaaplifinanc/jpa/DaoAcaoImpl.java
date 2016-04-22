@@ -61,7 +61,7 @@ public class DaoAcaoImpl implements DaoAcao, Serializable {
 
     @Override
     public List<Acao> list() {
-        this.acoes = dao.(Acao.class);
+        this.acoes = dao.list();
         return acoes;
     }
 
