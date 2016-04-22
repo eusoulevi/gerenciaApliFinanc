@@ -4,7 +4,6 @@ package org.cajuinabits.gerenciaaplifinanc.jpa;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.EntityManager;
-import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
 import org.cajuinabits.gerenciaaplifinanc.domain.Cota;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 
@@ -20,16 +19,18 @@ public interface Dao extends Serializable {
 
     public void edit(Cota cota) throws NonexistentEntityException, Exception;
 
-    public Acao find(String sigla);
+    public Cota find(String sigla, Class c);
     
-    public Acao find(long id);
+    public Cota find(long id, Class c);
 
-    public List<Acao> findEntities();
+    public List<Cota> findEntities(Class c);
 
-    public List<Acao> findEntities(int maxResults, int firstResult);
+    public List<Cota> findEntities(int maxResults, int firstResult);
 
-    public int getAcaoCount();
+    public int getCount(Class c);
 
     public EntityManager getEntityManager();
+    
+    public void setEntityManager(EntityManager manager);    
     
 }

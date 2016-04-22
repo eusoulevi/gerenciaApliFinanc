@@ -8,15 +8,11 @@ import java.sql.Timestamp;
 import javax.persistence.Entity;
 
 @Entity(name = "acoes")
-public class Acao extends CotaImpl {
+public class Acao extends CotaImpl implements Stock {
     
     private Setor setor;
     
-    public Acao () {}
-    
-    public Acao(Double cotacao, Timestamp t) {
-        super(cotacao, t);
-    }
+    public Acao () {}    
     
     public Setor getSetor() {
         return this.setor;

@@ -5,12 +5,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.persistence.EntityManagerFactory;
-import org.cajuinabits.gerenciaaplifinanc.Util;
+import javax.inject.Inject;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
-import org.cajuinabits.gerenciaaplifinanc.jpa.Dao;
-import org.cajuinabits.gerenciaaplifinanc.jpa.DaoCotaImpl;
+import org.cajuinabits.gerenciaaplifinanc.jpa.DaoAcao;
 
 /**
  *
@@ -19,37 +17,34 @@ import org.cajuinabits.gerenciaaplifinanc.jpa.DaoCotaImpl;
 @ManagedBean
 @RequestScoped
 public class AcaoManagedBean {
-    private EntityManagerFactory emf;
-    private final Dao dao;
+
+    @Inject
+    private DaoAcao dao;
+    @Inject
     private Acao acao;
+    @Inject
+    private Logger logger;
 
     /**
      * Creates a new instance of AcaoManagedBean
      */
     public AcaoManagedBean() {
-        acao = new Acao();
-        emf = Util.getInstance();
-        dao = new DaoCotaImpl(emf);
     }
     
     public void criar() {
         try {
             dao.create(acao);
         } catch (Exception ex) {
-            Logger.getLogger(AcaoManagedBean.class.getName()).log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, null, ex);
         }
     }
     
     public void deletar() throws NonexistentEntityException {
-        dao.destroy(acao.getIdCota());
-    }
-
-    public EntityManagerFactory getEmf() {
-        return emf;
-    }
-
-    public void setEmf(EntityManagerFactory emf) {
-        this.emf = emf;
+        try {
+            dao.destroy(acao.getIdCota());
+        } catch (org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException ex) {
+            logger.log(Level.SEVERE, null, ex);
+        }
     }
 
     public Acao getAcao() {

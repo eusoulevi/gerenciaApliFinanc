@@ -1,12 +1,12 @@
 package org.cajuinabits.gerenciaaplifinanc.jpa;
 
 import java.util.List;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
 import org.cajuinabits.gerenciaaplifinanc.domain.Cota;
 import org.cajuinabits.gerenciaaplifinanc.domain.Setor;
-import org.cajuinabits.gerenciaaplifinanc.Util;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -20,20 +20,18 @@ import static org.junit.Assert.*;
  * @author User
  */
 public class DaoCotaImplIT {
-    public static EntityManagerFactory emf;
-    public static DaoCotaImpl dao = null;
+    @Inject
+    public static DaoCotaImpl dao;
+    
     public DaoCotaImplIT() {
     }
     
     @BeforeClass
     public static void setUpClass() {
-        emf = Util.getInstance();
-        dao = new DaoCotaImpl(emf);
     }
     
     @AfterClass
     public static void tearDownClass() {
-       emf.close();
     }
     
     @Before

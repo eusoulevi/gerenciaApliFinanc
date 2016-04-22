@@ -12,7 +12,6 @@ public interface Cota {
     public String getSigla();
     public void setDescricao(String desc);
     public String getDescricao();
-    public void addCotacao(Double cotacao, Timestamp t);
      /**
      * Retorna a última cotação registrada
      * @return
@@ -23,5 +22,8 @@ public interface Cota {
     public void setTipo(String tipo);
     public String getTipo();
     public List<Cotacao> getHistorico();
+    public void addCotacao(Cotacao c);
+    public Double getValorMin();    
+    public Double getValorMax();    
 
 }

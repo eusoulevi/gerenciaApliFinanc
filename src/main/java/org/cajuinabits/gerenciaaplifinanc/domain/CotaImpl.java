@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import javax.inject.Inject;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -42,13 +43,10 @@ public abstract class CotaImpl implements Cota, Serializable {
     
     @OneToMany(mappedBy = "Cotacao")
     @Basic(fetch = FetchType.LAZY)
-    private List<Cotacao> cotacoes = new ArrayList<Cotacao>();
+    @Inject
+    private List cotacoes;
 
     public CotaImpl() {}
-
-    CotaImpl(Double cotacao, Timestamp t) {
-        this.cotacoes.add(new Cotacao(cotacao, t));
-    }
 
     public long getIdCota() {
         return idCota;
@@ -77,18 +75,10 @@ public abstract class CotaImpl implements Cota, Serializable {
     public String getDescricao() {
         return this.descricao;
     }
-
-    @Override
-    public void addCotacao(Double valor, Timestamp t) {
-        if (t==null) {
-            t = new Timestamp(System.nanoTime());
-        }
-        Cotacao h = new Cotacao(valor, t);
-        this.cotacoes.add(h);
-    }
     
+    @Override
     public void addCotacao(Cotacao c) {
-        addCotacao(c.getValor(), c.getDatetime());
+        this.cotacoes.add(c);
     }
 
     @Override
@@ -142,12 +132,13 @@ public abstract class CotaImpl implements Cota, Serializable {
         return ultimaCotacao;
     }
 
+    @Override
     public Double getValorMax() {
-        // Pega a maior cotacao apos comparar todos os valores
-        Cotacao cMax = Collections.max(this.cotacoes);
-        return cMax.getValor();
+        ArrayList<Cotacao> historico = (ArrayList<Cotacao>) this.getHistorico();
+        Collections.max(historico);
     }
 
+    @Override
     public Double getValorMin() {
         // Pega a menor cotacao apos comparar todos os valores
         Cotacao cMin = Collections.min(this.cotacoes);
