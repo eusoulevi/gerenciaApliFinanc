@@ -1,6 +1,7 @@
 
 package org.cajuinabits.gerenciaaplifinanc.jpa;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -11,14 +12,14 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import org.cajuinabits.gerenciaaplifinanc.domain.Cota;
 import org.cajuinabits.gerenciaaplifinanc.domain.CotaImpl;
-import org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException;
+import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.slf4j.Logger;
 
 /**
  *
  * @author levi.soares
  */
-public class abstract DaoCotaImpl implements Dao, Serializable {
+public class DaoCotaImpl implements Dao, Serializable {
     
     private static final long serialVersionUID = 28065345642800011L;
     
@@ -32,15 +33,33 @@ public class abstract DaoCotaImpl implements Dao, Serializable {
     }
     
     @Override
-    public void create(CotaImpl cota) {
+    public void create(Cota cota) {
             logger.info("Verificando se EntityManager está instanciada: " + em);
             em.getTransaction().begin();
             em.persist(cota);
             em.getTransaction().commit();
     }
 
+    /**
+     *
+     * @param id
+     * @throws NonexistentEntityException
+     */
     @Override
-    public void edit(Cota cota) throws org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException, Exception {
+    public void destroy(long id) throws NonexistentEntityException {
+        em.getTransaction().begin();
+        CotaImpl cotaImpl;
+        try {
+            cotaImpl = em.getReference(CotaImpl.class, id);
+        } catch (EntityNotFoundException enfe) {
+            throw new NonexistentEntityException("A cota com id " + id + " nao existe.", enfe);
+        }
+        em.remove(cotaImpl);
+        em.getTransaction().commit();
+    }
+
+    @Override
+    public void edit(Cota cota) throws NonexistentEntityException, Exception {
         try {
             em.getTransaction().begin();
             cota = em.merge(cota);
@@ -58,20 +77,23 @@ public class abstract DaoCotaImpl implements Dao, Serializable {
     }
     
     @Override
-    public void destroy(long id) throws NonexistentEntityException {
-            em = getEntityManager();
-            em.getTransaction().begin();
-            CotaImpl cotaImpl;
-            try {
-                cotaImpl = em.getReference(CotaImpl.class, id);
-            } catch (EntityNotFoundException enfe) {
-                throw new NonexistentEntityException("A cota com id " + id + " nao existe.", enfe);
-            }
-            em.remove(cotaImpl);
-            em.getTransaction().commit();
+    public Cota find(String sigla) {
+        Object result = null;
+        try {
+            Query query = em.createQuery("from " + c.getSimpleName() + " as c where c.sigla = :sigla");
+            query.setParameter("sigla", sigla);
+            result = query.getSingleResult();
+            return (Cota)result;
+        } catch ( NoResultException nre ) {
+            return null;
+        }
     }
-    
-    
+
+    @Override
+    public Cota find(long id) {
+        return (Cota) em.find(id);
+    }    
+        
     @Override
     public List findEntities(Class entityClass) {
         return list(true, -1, -1,entityClass);
@@ -94,28 +116,8 @@ public class abstract DaoCotaImpl implements Dao, Serializable {
             list = q.getResultList();
             return list;
 
-    }
-    
-    @Override
-    public Cota find(long id, Class entityClass) {
+    }   
 
-            return (Cota) em.find(entityClass, id);
-    }
-    
-    @Override
-    public Cota find(String sigla, Class entityClass) {
-        Object result = null;
-
-        try {
-            Query query = em.createQuery("from " + entityClass.getSimpleName() + " as c where c.sigla = :sigla",entityClass);
-            query.setParameter("sigla", sigla);
-            result = query.getSingleResult();
-            return (Cota)result;
-        } catch ( NoResultException nre ) {
-            return null;
-        }
-    }
-    
     @Override
     public int getCount(Class entityClass) {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();

@@ -133,16 +133,16 @@ public abstract class CotaImpl implements Cota, Serializable {
     }
 
     @Override
-    public Double getValorMax() {
-        ArrayList<Cotacao> historico = (ArrayList<Cotacao>) this.getHistorico();
-        Collections.max(historico);
+    public Cotacao getCotacaoMax() {
+        Cotacao max = Collections.max(this.getHistorico());
+        return max;
     }
 
     @Override
-    public Double getValorMin() {
+    public Cotacao getCotacaoMin() {
         // Pega a menor cotacao apos comparar todos os valores
-        Cotacao cMin = Collections.min(this.cotacoes);
-        return cMin.getValor();
+        Cotacao min = Collections.min(this.getHistorico());
+        return min;
     }
 
     @Override

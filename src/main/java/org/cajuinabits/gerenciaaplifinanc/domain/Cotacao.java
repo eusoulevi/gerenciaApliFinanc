@@ -8,7 +8,7 @@ import java.sql.Timestamp;
  * @author levi.soares
  */
 
-public interface Cotacao {    
+public interface Cotacao extends Comparable<Cotacao>{    
 
     public Long getId();
     public Cota getCota();

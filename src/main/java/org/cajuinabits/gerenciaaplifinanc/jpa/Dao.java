@@ -11,7 +11,7 @@ import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
  *
  * @author levi.soares
  */
-public interface Dao extends Serializable {
+public interface Dao {
 
     public void create(Cota cota);
 
@@ -19,13 +19,13 @@ public interface Dao extends Serializable {
 
     public void edit(Cota cota) throws NonexistentEntityException, Exception;
 
-    public Cota find(String sigla, Class c);
+    public Cota find(String sigla);
     
-    public Cota find(long id, Class c);
+    public Cota find(long id);
 
     public List<Cota> findEntities(Class c);
 
-    public List<Cota> findEntities(int maxResults, int firstResult);
+    public List<Cota> findEntities(int maxResults, int firstResult, Class c);
 
     public int getCount(Class c);
 

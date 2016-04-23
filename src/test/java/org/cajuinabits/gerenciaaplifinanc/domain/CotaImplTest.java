@@ -124,7 +124,7 @@ public class CotaImplTest {
     }
 
     /**
-     * Test of getValorMax method, of class CotaImpl.
+     * Test of getCotacaoMax method, of class CotaImpl.
      */
     @Test
     public void testGetValorMax() throws InterruptedException {
@@ -147,7 +147,7 @@ public class CotaImplTest {
         acao.addCotacao(cotacao4);
         
         Double expResult = cotacaoMaxima.getValor();
-        Double result = acao.getValorMax();
+        Double result = acao.getCotacaoMax();
         assertEquals(expResult, result);
     }
 
@@ -175,7 +175,7 @@ public class CotaImplTest {
         acao.addCotacao(cotacao4);
         
         Double expResult = cotacaoMin.getValor();
-        Double result = acao.getValorMin();
+        Double result = acao.getCotacaoMin();
         assertEquals(expResult, result);
     }
     

@@ -23,7 +23,7 @@ public interface Cota {
     public String getTipo();
     public List<Cotacao> getHistorico();
     public void addCotacao(Cotacao c);
-    public Double getValorMin();    
-    public Double getValorMax();    
+    public Cotacao getCotacaoMin();    
+    public Cotacao getCotacaoMax();    
 
 }
