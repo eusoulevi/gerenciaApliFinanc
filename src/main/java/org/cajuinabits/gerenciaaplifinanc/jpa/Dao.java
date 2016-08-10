@@ -19,13 +19,13 @@ public interface Dao {
 
     public void edit(Cota cota) throws NonexistentEntityException, Exception;
 
-    public Cota find(String sigla);
+    public Cota find(String sigla, Class c);
     
     public Cota find(long id);
 
-    public List<Cota> findEntities(Class c);
+    public List<Cota> list(Class c);
 
-    public List<Cota> findEntities(int maxResults, int firstResult, Class c);
+    public List<Cota> list(int maxResults, int firstResult, Class c);
 
     public int getCount(Class c);
 

@@ -44,6 +44,10 @@ public class CotacaoImpl implements Cotacao, Comparable<Cotacao>, Serializable  
     
     public CotacaoImpl() {
     }
+    
+    public CotacaoImpl(Double valor) {        
+        this.setValor(valor);
+    }
 
     public CotacaoImpl(Double valor, Timestamp t) {
         if (t==null) {

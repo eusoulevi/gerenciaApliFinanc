@@ -1,0 +1,480 @@
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@1b05234]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@54cc39]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@869e50]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@5d5b5c]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@b970cc]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@7655aa]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@118b81f]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@16f4737]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@3e075d]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@170d82f]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@a6528c]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@1424f86]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@6c50aa]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@13ff34d]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@3aa615]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@dcd35]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@c03ea8]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@2f48df]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@8ce172]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@127f9f0]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@eca2fa]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@1d6075d]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@1935137]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@c10930]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@a1fa7f]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@704189]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@ff4fb3]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@a1f562]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@1aa2420]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@179a0ab]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@1201439]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@291890]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@1849b09]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@a55143]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@129607b]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@1781ce4]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+DEBUG main org.hibernate.validator.internal.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@14043b3]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@23cd88]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@ff4fb3]
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@56ff3d]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@1aa2420]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@179a0ab]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Configuration - WELD-001902: Configuration initialized: {RELAXED_CONSTRUCTION=true}
+DEBUG main org.jboss.weld.Bootstrap - WELD-000124: Using 4 threads for bootstrap
+DEBUG main org.jboss.weld.Bootstrap - Using instantiator: org.jboss.weld.bean.proxy.UnsafeProxyInstantiator
+INFO main org.jboss.weld.Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%ApplicationContext
+DEBUG main org.jboss.weld.Reflection - WELD-000601: interface javax.inject.Singleton is missing @Target. Weld will use this annotation, however this may make the application unportable.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%SingletonContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%BoundRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%RequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%DependentContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpSessionDestructionContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpConversationContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: WELD%AbstractBuiltInBean%deployment%HttpRequestContext
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.jboss.weld.environment.se.WeldSEBeanRegistrant] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/jboss/weld/se/weld-se-core/2.3.1.Final/weld-se-core-2.3.1.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.jboss.weld.environment.se.WeldSEBeanRegistrant@1201439]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.jersey.server.impl.cdi.CDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/jersey/jersey-bundle/1.10/jersey-bundle-1.10.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.jersey.server.impl.cdi.CDIExtension@291890]
+INFO main org.jboss.weld.Event - WELD-000411: Observer method [BackedAnnotatedMethod] com.sun.jersey.server.impl.cdi.CDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class org.hibernate.validator.internal.cdi.ValidationExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[org.hibernate.validator.internal.cdi.ValidationExtension@1849b09]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowDiscoveryCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@3[com.sun.faces.flow.FlowDiscoveryCDIExtension@a55143]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.application.view.ViewScopeExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@1[com.sun.faces.application.view.ViewScopeExtension@129607b]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Extension [class com.sun.faces.flow.FlowCDIExtension] with qualifiers [@Default]; jar:file:/C:/Users/User/.m2/repository/com/sun/faces/jsf-impl/2.2.12/jsf-impl-2.2.12.jar!/META-INF/services/javax.enterprise.inject.spi.Extension@2[com.sun.faces.flow.FlowCDIExtension@1781ce4]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [javax.enterprise.inject.spi.BeanManager] with qualifiers [@Default]
+DEBUG main org.jboss.weld.Bootstrap - WELD-000106: Bean: Built-in Bean [org.jboss.weld.manager.BeanManagerImpl] with qualifiers [@Default]
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+DEBUG main org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO main org.jboss.weld.Version - WELD-000900: 2.3.1 (Final)
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.0.Final
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.0.Final
+INFO main org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.0.Final
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+DEBUG main org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+DEBUG main org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+INFO main org.jboss.weld.Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.DefaultBeanArchiveScanner - Resolved bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes for URL: file:/C:/Users/User/Documents/NetBeansProjects/gerenciaApliFinanc/target/classes/META-INF/beans.xml
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000032: Processing bean archive reference: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle path: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\META-INF
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\converters
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\domain
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interceptors
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\interfaces
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\jpa\exceptions
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\mb
+DEBUG main org.jboss.weld.environment.deployment.discovery.FileSystemBeanArchiveHandler - Handle directory: C:\Users\User\Documents\NetBeansProjects\gerenciaApliFinanc\target\classes\org\cajuinabits\gerenciaaplifinanc\util
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed
+DEBUG main org.jboss.weld.Bootstrap - WELD-ENV-000024: Archive isolation enabled - creating multiple isolated bean archives if needed

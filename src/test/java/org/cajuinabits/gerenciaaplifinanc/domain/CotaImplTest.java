@@ -2,17 +2,21 @@ package org.cajuinabits.gerenciaaplifinanc.domain;
 
 import static java.lang.Thread.sleep;
 import java.sql.Timestamp;
+import javax.inject.Inject;
+import org.cajuinabits.gerenciaaplifinanc.WeldJUnit4Runner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.runner.RunWith;
 
 /**
  *
  * @author levi.soares
  */
+@RunWith(WeldJUnit4Runner.class)
 public class CotaImplTest {
     
     public CotaImplTest() {
@@ -37,16 +41,20 @@ public class CotaImplTest {
     /**
      * Test of addCotacao method, of class CotaImpl.
      */
+    @Inject
+    Stock instance;
+    @Inject
+    Cotacao expResult;
+    
     @Test
     public void testAddCotacao() {
         System.out.println("addCotacao");
         Double valor = new Double(10);
-        Timestamp t = new Timestamp(System.currentTimeMillis());
-        Cotacao expResult = new Cotacao(valor, t);
-        CotaImpl instance = new Acao();
-        instance.addCotacao(valor, t);
+        expResult.setValor(valor);
+        instance.addCotacao(expResult);
         Cotacao result = instance.getHistorico().get(0);
-        Cotacao expResult2 = new Cotacao(20.0);
+        Cotacao expResult2 = new CotacaoImpl();
+        expResult2.setValor(20.0);
         instance.addCotacao(expResult2);
         Cotacao result2 = instance.getHistorico().get(1);
         assertEquals(expResult, result);
@@ -61,14 +69,14 @@ public class CotaImplTest {
         System.out.println("getValor");
         CotaImpl acao = new Acao();
         Timestamp t1 = new Timestamp(System.nanoTime());
-        Cotacao cotacaoPrimeira = new Cotacao(10.01,t1);
+        Cotacao cotacaoPrimeira = new CotacaoImpl(10.01,t1);
  
         sleep(1);
         Timestamp t2 = new Timestamp(System.nanoTime());
-        Cotacao cotacao2 = new Cotacao(11.99,t2);
+        Cotacao cotacao2 = new CotacaoImpl(11.99,t2);
 
         sleep(1);
-        Cotacao cotacaoUltima = new Cotacao("13");
+        Cotacao cotacaoUltima = new CotacaoImpl(13.0,new Timestamp(System.currentTimeMillis()));
         Timestamp t3 = cotacaoUltima.getDatetime();
         
         acao.addCotacao(cotacaoPrimeira);
@@ -92,19 +100,21 @@ public class CotaImplTest {
     /**
      * Test of getValorAtual method, of class CotaImpl.
      */
+    @Inject
+    Cotacao cotacao1;
     @Test
     public void testGetValorAtual() throws InterruptedException {
         System.out.println("getValorAtual");
+        cotacao1.setValor(10.0);
         CotaImpl acao = new Acao();
-        Cotacao cotacao1 = new Cotacao("10");
         sleep(100);
-        Cotacao cotacao2 = new Cotacao("11");
+        Cotacao cotacao2 = new CotacaoImpl(11.0);
         sleep(100);
-        Cotacao cotacao3 = new Cotacao("14");
+        Cotacao cotacao3 = new CotacaoImpl(14.0);
         sleep(100);
-        Cotacao cotacao4 = new Cotacao("12");
+        Cotacao cotacao4 = new CotacaoImpl(12.0);
         sleep(100);
-        Cotacao cotacaoUltima = new Cotacao("13");
+        Cotacao cotacaoUltima = new CotacaoImpl(13.0);
         
         acao.addCotacao(cotacao1);
         acao.addCotacao(cotacaoUltima);
@@ -116,8 +126,8 @@ public class CotaImplTest {
         Double result = acao.getValorAtual();
         assertEquals(expResult, result);
 
-        Double expResult2 = Double.valueOf(20);
-        acao.addCotacao(expResult2, null);
+        Cotacao expResult2 = new CotacaoImpl(20.0, new Timestamp(System.currentTimeMillis()));
+        acao.addCotacao(expResult2);
         Double result2 = acao.getValorAtual();
         
         assertEquals(expResult2, result2);
@@ -130,15 +140,15 @@ public class CotaImplTest {
     public void testGetValorMax() throws InterruptedException {
         System.out.println("getValorMax");
         CotaImpl acao = new Acao();
-        Cotacao cotacao1 = new Cotacao("10");
+        Cotacao cotacao1 = new CotacaoImpl(10.0);
         sleep(100);
-        Cotacao cotacao2 = new Cotacao("11");
+        Cotacao cotacao2 = new CotacaoImpl(11.0);
         sleep(100);
-        Cotacao cotacaoMaxima = new Cotacao("14");
+        Cotacao cotacaoMaxima = new CotacaoImpl(14.0);
         sleep(100);
-        Cotacao cotacao3 = new Cotacao("12");
+        Cotacao cotacao3 = new CotacaoImpl(12.0);
         sleep(100);
-        Cotacao cotacao4 = new Cotacao("13");
+        Cotacao cotacao4 = new CotacaoImpl(13.0);
         
         acao.addCotacao(cotacao1);
         acao.addCotacao(cotacao2);
@@ -147,7 +157,7 @@ public class CotaImplTest {
         acao.addCotacao(cotacao4);
         
         Double expResult = cotacaoMaxima.getValor();
-        Double result = acao.getCotacaoMax();
+        Cotacao result = acao.getCotacaoMax();
         assertEquals(expResult, result);
     }
 
@@ -158,15 +168,15 @@ public class CotaImplTest {
     public void testGetValorMin() throws InterruptedException {
         System.out.println("getValorMin");
         CotaImpl acao = new Acao();
-        Cotacao cotacao1 = new Cotacao("10");
+        Cotacao cotacao1 = new CotacaoImpl(10.0);
         sleep(100);
-        Cotacao cotacao2 = new Cotacao("11");
+        Cotacao cotacao2 = new CotacaoImpl(11.0);
         sleep(100);
-        Cotacao cotacaoMaxima = new Cotacao("14");
+        Cotacao cotacaoMaxima = new CotacaoImpl(14.0);
         sleep(100);
-        Cotacao cotacaoMin = new Cotacao("9");
+        Cotacao cotacaoMin = new CotacaoImpl(9.0);
         sleep(100);
-        Cotacao cotacao4 = new Cotacao("13");
+        Cotacao cotacao4 = new CotacaoImpl(13.0);
         
         acao.addCotacao(cotacao1);
         acao.addCotacao(cotacao2);
@@ -175,7 +185,7 @@ public class CotaImplTest {
         acao.addCotacao(cotacao4);
         
         Double expResult = cotacaoMin.getValor();
-        Double result = acao.getCotacaoMin();
+        Cotacao result = acao.getCotacaoMin();
         assertEquals(expResult, result);
     }
     

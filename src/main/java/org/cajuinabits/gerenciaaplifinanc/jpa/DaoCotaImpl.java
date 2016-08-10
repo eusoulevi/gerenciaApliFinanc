@@ -34,10 +34,10 @@ public class DaoCotaImpl implements Dao, Serializable {
     
     @Override
     public void create(Cota cota) {
-            logger.info("Verificando se EntityManager está instanciada: " + em);
-            em.getTransaction().begin();
-            em.persist(cota);
-            em.getTransaction().commit();
+        logger.info("Verificando se EntityManager está instanciada: " + em);
+        em.getTransaction().begin();
+        em.persist(cota);
+        em.getTransaction().commit();
     }
 
     /**
@@ -68,7 +68,7 @@ public class DaoCotaImpl implements Dao, Serializable {
             String msg = ex.getLocalizedMessage();
             if (msg == null || msg.length() == 0) {
                 String sigla = cota.getSigla();
-                if (find(sigla,CotaImpl.class) == null) {
+                if (find(sigla, cota.getClass()) == null) {
                     throw new NonexistentEntityException("A cota com sigla " + sigla + " nao existe.");
                 }
             }
@@ -77,10 +77,10 @@ public class DaoCotaImpl implements Dao, Serializable {
     }
     
     @Override
-    public Cota find(String sigla) {
+    public Cota find(String sigla, Class c) {
         Object result = null;
         try {
-            Query query = em.createQuery("from " + c.getSimpleName() + " as c where c.sigla = :sigla");
+            Query query = em.createQuery("from as " + c.getCanonicalName() + " where c.sigla = :sigla");
             query.setParameter("sigla", sigla);
             result = query.getSingleResult();
             return (Cota)result;
@@ -91,11 +91,11 @@ public class DaoCotaImpl implements Dao, Serializable {
 
     @Override
     public Cota find(long id) {
-        return (Cota) em.find(id);
-    }    
+        return (Cota) em.find(CotaImpl.class, id);
+    }
         
     @Override
-    public List findEntities(Class entityClass) {
+    public List list(Class entityClass) {
         return list(true, -1, -1,entityClass);
     }
 
@@ -106,25 +106,24 @@ public class DaoCotaImpl implements Dao, Serializable {
     
     private List list(boolean all, int maxResults, int firstResult, Class entityClass) {
         List list = null;
-            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            cq.select(cq.from(entityClass));
-            Query q = em.createQuery(cq);
-            if (!all) {
-                q.setMaxResults(maxResults);
-                q.setFirstResult(firstResult);
-            }
-            list = q.getResultList();
-            return list;
-
+        CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+        cq.select(cq.from(entityClass));
+        Query q = em.createQuery(cq);
+        if (!all) {
+            q.setMaxResults(maxResults);
+            q.setFirstResult(firstResult);
+        }
+        list = q.getResultList();
+        return list;
     }   
 
     @Override
     public int getCount(Class entityClass) {
-            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
-            Root<CotaImpl> rt = cq.from(entityClass);
-            cq.select(em.getCriteriaBuilder().count(rt));
-            Query q = em.createQuery(cq);
-            return ((Long) q.getSingleResult()).intValue();
+        CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+        Root<CotaImpl> rt = cq.from(entityClass);
+        cq.select(em.getCriteriaBuilder().count(rt));
+        Query q = em.createQuery(cq);
+        return ((Long) q.getSingleResult()).intValue();
     }
 
     public Logger getLogger() {
@@ -137,7 +136,7 @@ public class DaoCotaImpl implements Dao, Serializable {
 
     @Override
     public EntityManager getEntityManager() {
-        return em;
+        return this.em;
     }
 
     @Override

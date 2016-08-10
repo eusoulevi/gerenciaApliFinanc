@@ -10,7 +10,7 @@ import javax.persistence.EntityNotFoundException;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import org.cajuinabits.gerenciaaplifinanc.domain.CotacaoImpl;
-import org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException;
+import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 
 /**
  *

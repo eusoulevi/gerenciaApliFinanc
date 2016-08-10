@@ -3,9 +3,10 @@ package org.cajuinabits.gerenciaaplifinanc.jpa;
 
 import javax.inject.Inject;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
+import org.cajuinabits.gerenciaaplifinanc.domain.CotacaoImpl;
 import org.cajuinabits.gerenciaaplifinanc.domain.Setor;
 import org.cajuinabits.gerenciaaplifinanc.domain.Stock;
-import org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException;
+import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -52,7 +53,7 @@ public class DaoAcaoIT {
         String sigla = "TEST1";
 
         expResult.setSigla(sigla);
-        expResult.addCotacao(10.01, null);
+        expResult.addCotacao(new CotacaoImpl(10.01));
         expResult.setDescricao("Teste Create");
         expResult.setTipo("PN");
         expResult.setSetor(Setor.AGROPECUARIA);
@@ -68,7 +69,7 @@ public class DaoAcaoIT {
         String sigla = "TEST2";
 
         acao.setSigla(sigla);
-        acao.addCotacao(12.01, null);
+        acao.addCotacao(new CotacaoImpl(12.01));
         acao.setDescricao("Teste destroy");
         acao.setTipo("ON");
         acao.setSetor(Setor.AGUA);

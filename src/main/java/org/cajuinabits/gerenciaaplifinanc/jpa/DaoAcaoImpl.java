@@ -2,16 +2,20 @@
 package org.cajuinabits.gerenciaaplifinanc.jpa;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.inject.Inject;
+import javax.inject.Named;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
-import org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException;
+import org.cajuinabits.gerenciaaplifinanc.domain.Cota;
+import org.cajuinabits.gerenciaaplifinanc.domain.Stock;
+import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
+
+import org.slf4j.Logger;
 
 /**
- *
+ import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
+*
  * @author levi.soares
  */
 public class DaoAcaoImpl implements DaoAcao, Serializable {
@@ -21,8 +25,8 @@ public class DaoAcaoImpl implements DaoAcao, Serializable {
     @Inject
     private Dao dao;
     
-    @Inject
-    private List<Acao> acoes;
+    @Inject @Named("criaLista")
+    private List acoes;
     
     @Inject
     private Logger logger;
@@ -40,7 +44,7 @@ public class DaoAcaoImpl implements DaoAcao, Serializable {
         try {
             dao.destroy(id);
         } catch (org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException ex) {
-            logger.log(Level.SEVERE, null, ex);
+            logger.error("Id não existe ou não encontrado", ex);
         }
     }
 
@@ -56,12 +60,16 @@ public class DaoAcaoImpl implements DaoAcao, Serializable {
 
     @Override
     public Acao find(long id) {
-        return (Acao) dao.find(id, Acao.class);
+        return (Acao) dao.find(id);
     }
 
     @Override
     public List<Acao> list() {
-        this.acoes = dao.list();
+        List<Cota> list = dao.list(Acao.class);
+        for (Iterator<Cota> iterator = list.iterator(); iterator.hasNext();) {
+                Cota next = (Stock) iterator.next();
+                this.acoes.add(next);
+        }                
         return acoes;
     }
 

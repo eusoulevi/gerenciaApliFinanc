@@ -1,14 +1,13 @@
 
 package org.cajuinabits.gerenciaaplifinanc.mb;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.cajuinabits.gerenciaaplifinanc.jpa.DaoAcao;
+import org.slf4j.Logger;
 
 /**
  *
@@ -35,15 +34,15 @@ public class AcaoManagedBean {
         try {
             dao.create(acao);
         } catch (Exception ex) {
-            logger.log(Level.SEVERE, null, ex);
+            logger.error("Erro ao criar a ação no método dao.create", ex);
         }
     }
     
     public void deletar() throws NonexistentEntityException {
         try {
             dao.destroy(acao.getIdCota());
-        } catch (org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException ex) {
-            logger.log(Level.SEVERE, null, ex);
+        } catch (NonexistentEntityException ex) {
+            logger.error("Erro ao deletar: método destroy", ex);
         }
     }
 

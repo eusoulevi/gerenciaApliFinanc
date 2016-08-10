@@ -44,8 +44,9 @@ public class InvestimentoImplTest {
         Double impostos = 10.41;
         int quantidade = 100;
         Double valorAcao = 10.01;
+        Cotacao c = new CotacaoImpl(valorAcao);
         Acao acao = new Acao();
-        acao.addCotacao(valorAcao, null);
+        acao.addCotacao(c);
         OperacaoImpl operacao = new OperacaoImpl(corretagem, emolumentos, impostos);
         operacao.setCota(acao);
         operacao.setQuantidade(quantidade);
@@ -73,7 +74,7 @@ public class InvestimentoImplTest {
         Double impostos = 0.10;
         Operacao operacao = new OperacaoImpl(corretagem, emolumentos, impostos);
         Acao acao = new Acao();
-        Cotacao cotacao = new Cotacao(valorCompra, null);
+        Cotacao cotacao = new CotacaoImpl(valorCompra);
         acao.addCotacao(cotacao);
         operacao.setQuantidade(quantidade);
         operacao.setCota(acao);
@@ -81,7 +82,7 @@ public class InvestimentoImplTest {
         Double valorAtual = 10.989;
         Double expResult = (valorAtual * quantidade) - ((valorCompra * quantidade) - corretagem 
                 - emolumentos - impostos);
-        acao.addCotacao(new Cotacao(valorAtual, null));
+        acao.addCotacao(new CotacaoImpl(valorAtual));
         Double result = investimento.ganhoRealValorizacao();
         
         System.out.println("Ganho Real com Valorizacao: " + result);
@@ -100,7 +101,7 @@ public class InvestimentoImplTest {
         Double impostos = 0.10;
         Double valor = 12.01;
         int quant = 100;
-        Acao acao = new Acao(valor, null);
+        Acao acao = new Acao(new CotacaoImpl(valor));
         Operacao operacao = new OperacaoImpl(corretagem, emolumentos, impostos, acao, quant);
         InvestimentoImpl investimento = new InvestimentoImpl(operacao);
         Double expResult = (quant * valor) - corretagem - emolumentos - impostos;

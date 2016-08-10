@@ -3,7 +3,7 @@ package org.cajuinabits.gerenciaaplifinanc.jpa;
 
 import java.util.List;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
-import org.cajuinabits.gerenciaaplifinanc.jpa.exceptions.NonexistentEntityException;
+import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 
 /**
  *

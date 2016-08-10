@@ -8,8 +8,6 @@ import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 import javax.faces.bean.ApplicationScoped;
 import javax.inject.Named;
-import org.cajuinabits.gerenciaaplifinanc.domain.Cotacao;
-import org.cajuinabits.gerenciaaplifinanc.domain.CotacaoImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,23 +28,23 @@ public class Produtor {
      */
     @Produces
     public Logger createLogger( InjectionPoint injectionPoint ) {        
-        Class classe = injectionPoint.getMember().getDeclaringClass();
-        final Logger logger = LoggerFactory.getLogger(classe.getName());
+//        Class classe = injectionPoint.getMember().getDeclaringClass();
+        Logger logger = LoggerFactory.getLogger(injectionPoint.getMember().getDeclaringClass());
         return logger;
     }
 
     /**
      *
      */
-    @Produces @Named("criaListaCotacoes")
-    public List criaListaCotacoes() {
+//    @Produces @Named("criaLista")
+    @Produces @Named
+    public List criaLista() {
         return new ArrayList<>();
     }
     
     @Produces
     public Timestamp createCalendar() {
-        Timestamp timeStamp = new Timestamp(System.currentTimeMillis());
-        return timeStamp;
+        return  new Timestamp(System.currentTimeMillis());     
     }
 
 }
