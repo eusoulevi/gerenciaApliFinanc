@@ -4,6 +4,7 @@ import static java.lang.Thread.sleep;
 import java.sql.Timestamp;
 import javax.inject.Inject;
 import org.cajuinabits.gerenciaaplifinanc.WeldJUnit4Runner;
+import org.jboss.arquillian.junit.Arquillian;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,7 +17,7 @@ import org.junit.runner.RunWith;
  *
  * @author levi.soares
  */
-@RunWith(WeldJUnit4Runner.class)
+@RunWith(Arquillian.class)
 public class CotaImplTest {
     
     public CotaImplTest() {

@@ -2,7 +2,6 @@
 package org.cajuinabits.gerenciaaplifinanc.domain;
 
 import javax.inject.Inject;
-import org.cajuinabits.gerenciaaplifinanc.WeldJUnit4Runner;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.cajuinabits.gerenciaaplifinanc.interfaces.Padrao;
 import org.cajuinabits.gerenciaaplifinanc.util.Produtor;
@@ -11,7 +10,6 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.jboss.shrinkwrap.api.spec.WebArchive;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
@@ -21,16 +19,16 @@ import org.junit.runner.RunWith;
  *
  * @author levi
  */
-@RunWith(WeldJUnit4Runner.class)
+@RunWith(Arquillian.class)
 public class AcaoArquilianTest {
 
     @Deployment
     public static JavaArchive createDeployment() {
         JavaArchive jar;
         jar = ShrinkWrap.create(JavaArchive.class, "test.jar")
-//                .addPackages(true,Acao.class.getPackage(), Produtor.class.getPackage(), 
-//                        org.slf4j.LoggerFactory.class.getPackage(), 
-//                        NonexistentEntityException.class.getPackage(), Padrao.class.getPackage())
+                .addPackages(true,Acao.class.getPackage(), Produtor.class.getPackage(), 
+                        org.slf4j.LoggerFactory.class.getPackage(), 
+                        NonexistentEntityException.class.getPackage(), Padrao.class.getPackage())
 //                .addClasses(CotaImpl.class, Produtor.class, Acao.class, Cota.class, Stock.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE,"beans.xml");
         System.out.println(jar.toString(true));

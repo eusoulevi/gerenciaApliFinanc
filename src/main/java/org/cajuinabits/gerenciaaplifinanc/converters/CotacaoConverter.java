@@ -16,9 +16,9 @@ import org.cajuinabits.gerenciaaplifinanc.jpa.DaoCotacao;
 @FacesConverter(forClass = CotacaoConverter.class)
 public class CotacaoConverter implements Converter {
     @Inject
-    public DaoCotacao dao;
+    private DaoCotacao dao;
     @Inject
-    public Cotacao cotacao;
+    private Cotacao cotacao;
 
     @Override
     public Object getAsObject(FacesContext fc, UIComponent uic, String string) {
@@ -33,6 +33,22 @@ public class CotacaoConverter implements Converter {
     public String getAsString(FacesContext fc, UIComponent uic, Object o) {
         Cotacao cotacao = (Cotacao) o;
         return cotacao.getValor().toString();
+    }
+
+    public DaoCotacao getDao() {
+        return dao;
+    }
+
+    public void setDao(DaoCotacao dao) {
+        this.dao = dao;
+    }
+
+    public Cotacao getCotacao() {
+        return cotacao;
+    }
+
+    public void setCotacao(Cotacao cotacao) {
+        this.cotacao = cotacao;
     }
     
 }

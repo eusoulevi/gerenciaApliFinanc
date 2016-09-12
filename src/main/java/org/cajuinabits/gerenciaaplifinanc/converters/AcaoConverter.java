@@ -16,7 +16,7 @@ import org.cajuinabits.gerenciaaplifinanc.jpa.DaoAcao;
 @FacesConverter(forClass = Acao.class)
 public class AcaoConverter implements Converter {
     @Inject
-    DaoAcao daoAcao;
+    private DaoAcao daoAcao;
 
     @Override
     public Object getAsObject(FacesContext fc, UIComponent uic, String string) {
@@ -34,6 +34,14 @@ public class AcaoConverter implements Converter {
     public String getAsString(FacesContext fc, UIComponent uic, Object o) {
         Acao acao = (Acao) o;        
         return acao.getSigla();
+    }
+
+    public DaoAcao getDaoAcao() {
+        return daoAcao;
+    }
+
+    public void setDaoAcao(DaoAcao daoAcao) {
+        this.daoAcao = daoAcao;
     }
     
 }

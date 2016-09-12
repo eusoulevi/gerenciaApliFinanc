@@ -3,18 +3,23 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
-        <title>Cadastro de A&ccedil;&otilde;es</title>
+        <title>Cadastro de Acoes</title>
     </h:head>
     <h:body>
         <h:form>
             <h:panelGrid columns="2">
-                A&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.sigla}" /> <br/>
-                Descri&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.descricao}" /> <br/>
-                Cota&ccedil;&atilde;o: <h:inputText value="#{acaoManagedBean.acao.addCotacao(valor, null)}" /> <br/>
-                Tipo: <h:selectOneMenu value="#{acaoManagedBean.acao.tipo}" requiredMessage="Selecione uma opção" title="Tipo de ação"/>
+                Acao: <h:inputText value="#{acaoManagedBean.acao.sigla}" /> <br/>
+                Descricao: <h:inputText value="#{acaoManagedBean.acao.descricao}" /> <br/>
+                Cotacao: <h:inputText value="#{acaoManagedBean.cotacao.valor}">
+                    <f:convertNumber minFractionDigits="2" />
+                </h:inputText> <br/>
+                Tipo: <h:selectOneMenu value="#{acaoManagedBean.acao.tipo}" requiredMessage="Selecione uma opção" title="Tipo de ação">
+                    <f:selectItem itemValue="ON" itemLabel="Ordinaria" />
+                    <f:selectItem itemValue="PN" itemLabel="Preferenciais" />
+                </h:selectOneMenu>
                 Setor: <h:selectOneMenu value="#{acaoManagedBean.acao.setor}" /> <br/>
             </h:panelGrid>
-        </h:form>
         <h:commandButton value="Salvar" action="#{acaoManagedBean.criar()}"/>
+        </h:form>
     </h:body>
 </html>

@@ -1,32 +1,22 @@
+
 package org.cajuinabits.gerenciaaplifinanc.domain;
 
 import java.util.List;
-import javax.persistence.Entity;
+
 /**
+ *
  * @author levi.soares
  */
-@Entity(name = "fiis")
-public class Fii extends CotaImpl {
-    private String administrador;
-    private List<String> ativos;
-        
-    public void setAdministrador(String administrador) {
-        this.administrador = administrador;
-    }
+public interface Fii {
 
-    public String getAdministrador() {
-        return administrador;
-    }
+    void addAtivos(String ativos);
 
-    public void addAtivos(String ativos) {
-        this.ativos.add(ativos);
-    }
+    String getAdministrador();
 
-    public void removeAtivos(String ativo) {
-        this.ativos.remove(ativo);
-    }
+    List<String> getAtivos();
 
-    public List<String> getAtivos() {
-        return ativos;
-    }
+    void removeAtivos(String ativo);
+
+    void setAdministrador(String administrador);
+    
 }

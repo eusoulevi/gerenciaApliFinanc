@@ -5,6 +5,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import org.cajuinabits.gerenciaaplifinanc.domain.Acao;
+import org.cajuinabits.gerenciaaplifinanc.domain.Cotacao;
 import org.cajuinabits.gerenciaaplifinanc.exceptions.NonexistentEntityException;
 import org.cajuinabits.gerenciaaplifinanc.jpa.DaoAcao;
 import org.slf4j.Logger;
@@ -23,6 +24,8 @@ public class AcaoManagedBean {
     private Acao acao;
     @Inject
     private Logger logger;
+    @Inject
+    private Cotacao cotacao;
 
     /**
      * Creates a new instance of AcaoManagedBean
@@ -31,6 +34,7 @@ public class AcaoManagedBean {
     }
     
     public void criar() {
+        this.acao.addCotacao(this.getCotacao());
         try {
             dao.create(acao);
         } catch (Exception ex) {
@@ -52,6 +56,14 @@ public class AcaoManagedBean {
 
     public void setAcao(Acao acao) {
         this.acao = acao;
+    }
+
+    public Cotacao getCotacao() {
+        return this.cotacao;
+    }
+
+    public void setCotacao(Cotacao cotacao) {
+        this.cotacao = cotacao;
     }
     
 }

@@ -86,7 +86,7 @@ public class CotacaoImpl implements Cotacao, Comparable<Cotacao>, Serializable  
         return this.valor;
     }
 
-    @Override @Named("preco")
+    @Override
     public void setValor(Double valor) {
         this.valor = valor;
     }
